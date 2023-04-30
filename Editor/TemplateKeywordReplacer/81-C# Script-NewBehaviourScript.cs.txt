@@ -1,0 +1,26 @@
+/*
+#SCRIPTNAME#.cs
+Author : #AUTHOR#
+Date   : #DATE#
+*/
+
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using Sirenix.OdinInspector;
+
+namespace #NAMESPACE#
+{
+    [ShowOdinSerializedPropertiesInInspector]
+    public class #SCRIPTNAME# : MonoBehaviour
+    {
+        #region[Field]
+        #endregion
+
+        #region[Property]
+        #endregion
+
+        #region[Method]
+        #endregion
+    }
+}
