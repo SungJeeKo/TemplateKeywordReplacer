@@ -27,7 +27,7 @@ public class TemplateKeywordReplacer : UnityEditor.AssetModificationProcessor
         string fileContent = System.IO.File.ReadAllText(path);
 
         fileContent = fileContent.Replace("#DATE#", System.DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss", System.Globalization.CultureInfo.CreateSpecificCulture("ko-KR")));
-        SOTemplateKeywordReplacer information = AssetDatabase.LoadAssetAtPath<SOTemplateKeywordReplacer>("Assets/Editor/TemplateKeyword.asset");
+        SOTemplateKeywordReplacer information = AssetDatabase.LoadAssetAtPath<SOTemplateKeywordReplacer>("Assets/Editor/TemplateKeywordReplacer/SOTemplateKeyword.asset");
         if (information)
         {
             fileContent = fileContent.Replace("#NAMESPACE#", information.Namespace);
